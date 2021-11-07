@@ -219,4 +219,4 @@ console.log('arr4',arr4.flatMap(x => x.split(" ")));
 
 
 const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>ES7 / ECMAScript 2016  Examples</h1>`;
+appDiv.innerHTML = `<h1>ES7 / ES8 / ES9 / ES10  Examples</h1>`;
