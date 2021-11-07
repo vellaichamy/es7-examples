@@ -40,12 +40,28 @@ var iterator = asyncIterator();
 
 // Object rest properties =================================
 
-console.clear();
+// console.clear();
 
 let { fname, lname, ...rest } = { fname: "Ugra", lname: "UV", location: "Bangalore" };
-fname; //"Hemanth"
-lname; //"HM"
-rest; // {location: "Earth", type: "Human"}
+fname;
+lname; 
+rest;
+
+// ============================================================
+
+console.clear();
+var fruits = {
+  
+  apple: 10,
+  orange: 20,
+  grapes: 30,
+  pineapple: 40
+
+}
+
+var totalVegetables = Object.values(fruits).reduce((a, b) => a + b);
+
+console.log(totalVegetables);
 
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>ES7 / ECMAScript 2016  Examples</h1>`;
