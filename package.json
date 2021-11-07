@@ -2,5 +2,8 @@
   "name": "js",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "es6": "^0.0.7",
+    "es7": "^1.0.7"
+  }
 }
