@@ -216,6 +216,33 @@ console.log('arr4',arr4.map(x => x.split(" ")));
 console.log('arr4',arr4.flatMap(x => x.split(" ")));
 // ["it's","Sunny","in", "", "Bangalore"]
 
+const entries = new Map([
+  ['foo', 'bar'],
+  ['baz', 42]
+]);
+
+const obj04 = Object.fromEntries(entries);
+
+console.log(obj04);
+// expected output: Object { foo: "bar", baz: 42 }
+
+
+const map = new Map([ ['foo', 'bar'], ['baz', 42] ]);
+const obj05 = Object.fromEntries(map);
+console.log(obj05); // { foo: "bar", baz: 42 }
+
+
+const object1 = { a: 1, b: 2, c: 3 };
+
+const object2 = Object.fromEntries(
+  Object.entries(object1)
+  .map(([ key, val ]) => [ key, val * 2 ])
+);
+
+console.log(object2);
+// { a: 2, b: 4, c: 6 }
+
+
 
 
 const appDiv = document.getElementById('app');
